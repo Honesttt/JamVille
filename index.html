@@ -5,15 +5,60 @@ body {
 background-image: url("bg.png");
 background-size: 100%, 100%;
 }
+
+    @import "compass/css3";
+
+/*Be sure to look into browser prefixes for keyframes and annimations*/
+.flash {
+   animation-name: flash;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color: red;}
+    to {color: black;}
+}
+
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 </style>
+<span class="flash">Website created by LeafyIsHeree</span>
 <h1>
 Welcome to the JamVille <i>Official</i> Website!
 </h1>
 <font size=4 color=white face=arial>
-Come to the design shop (AKA My House) To get a screenshot of your place on here.
-<Br>
-Also, if you have a shop, I'll make a custom ad banner for you! That's 70 Emeralds per
+<H1>Progress on the Wonder Hotel Started!</h1>
+Started by CrisMommy, The Wonder Hotel is going to be a place where players on the realm
 <br>
-Week, If you want to have a time shorter than a week, then tell me ingame at LeafyIsHeree.
+can pay 5<img src=iron.png height=20 title="Iron Ingot"> a day to stay in a 10x10 room, this way they don't
+<br>
+have to build their own house. "This hotel is part of the Wonder Cave restaurant." -Crismommy
+<br>
+Below are some screenshots of the Under-Construction Build.
+<br>
+<img src="s1.png" height=250>
+<img src="s2.png" height=250>
+<img src="s3.png" height=250>
+<br>
+<img src="record.png" height=250 class="rotate">
+<br>
+<audio src="stal.mp3" loop autoplay>
+<p>If you are reading this, it is because your browser does not support the audio element.     </p>
+</audio>
+Currently Playing: <b>C418 - Stal</b>
 </body>
 </html>
